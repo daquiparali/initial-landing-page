@@ -1,0 +1,203 @@
+/*BACKGROUND*/
+.lightBG {
+	background-color: #A7DAEF;
+}
+.darkBG {
+	background-color: #293241;
+	color: white;
+}
+
+hr {
+  border-color: white;
+  border-width: 2px;
+  max-width: 50px;
+  margin-bottom: 50px;
+}
+
+hr.dark {
+  border-color: #293241;
+}
+
+
+h2 {
+  font-size: 40px;
+  line-height: 1.5;
+  margin-bottom: -10px;
+}
+
+p {
+  font-size: 24px;
+  line-height: 1.5;
+  margin-bottom: 25px;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Droid Sans', sans-serif;
+  letter-spacing: 1px;
+}
+
+/*NAVBAR*/
+.navbar-default {
+  background-color: white;
+  border-color: rgba(41, 50, 65, 0.1);
+}
+.navbar-default .navbar-header .navbar-toggle{ /*menu icon*/
+	background-color: #A7DAEF;
+}
+.navbar-default .navbar-header .navbar-toggle:hover,
+.navbar-default .navbar-header .navbar-toggle:focus { /*menu icon on hover/focus*/
+	background-color: white;
+}
+.navbar-default .navbar-header .navbar-toggle .icon-bar{ /*menu bars*/
+	background-color: white;
+}
+.navbar-default .navbar-header .navbar-toggle:hover .icon-bar,
+.navbar-default .navbar-header .navbar-toggle:focus .icon-bar{ /*menu bars*/
+	background-color: #293241;
+}
+.navbar-default .navbar-header .navbar-brand:hover,
+.navbar-default .navbar-header .navbar-brand:focus {
+//  background-color: #293241;
+//  color: white;
+}
+.navbar-default .nav > li > a,
+.navbar-default .nav > li > a:focus {
+  font-weight: 600;
+  font-size: 16px;
+  color: #A7DAEF;
+}
+.navbar-default .nav > li > a:hover,
+.navbar-default .nav > li > a:focus:hover {
+//  background-color: #7a4407;
+//  color: white;
+	color: #293241;
+}
+
+.navbar-default .nav > .active > a,
+.navbar-default .nav > .active > a:hover,
+.navbar-default .nav > .active > a:focus {
+	background-color:#A7DAEF;
+	color: white;
+}
+
+@media (min-width: 768px) {
+	.navbar {
+		background: transparent;
+		//color: white;
+	    -webkit-transition: all 0.6s ease-out;
+	    -moz-transition: all 0.6s ease-out;
+	    -o-transition: all 0.6s ease-out;
+	    -ms-transition: all 0.6s ease-out;
+	    transition: all 0.6s ease-out;
+	}
+	.navbar-default .nav > li > a,
+	.navbar-default .nav > li > a:focus {
+	  color: white;
+	}
+	.navbar.scrolled {
+	    background-color: white;
+	}
+
+	.navbar.scrolled .nav > li > a,
+	.navbar.scrolled .nav > li > a:focus {
+		color: #A7DAEF;
+	}
+
+	.navbar-default .nav > li > a,
+	.navbar-default .nav > li > a:focus,
+	.navbar-default .navbar-nav>.open>a, 
+	.navbar-default .navbar-nav>.open>a:focus, 
+	.navbar-default .navbar-nav>.open>a:hover {
+		//background-color: transparent;
+		//color: #BEEAEF
+	}
+	.navbar-default .nav > li > a:hover,
+	.navbar-default .nav > li > a:focus:hover {
+		color: #293241;
+	}
+	.navbar.scrolled .nav > .active > a,
+	.navbar.scrolled .nav > .active > a:hover,
+	.navbar.scrolled .nav > .active > a:focus {
+	    background-color:#A7DAEF;
+	    color: white;
+	}
+
+}
+
+/*HEADER*/
+header {
+	position: relative;
+	width: 100%;
+	min-height: auto;
+	background-size: cover;
+	background-position: center;
+	background-image: url('../resources/cover.jpg');
+	text-align: center;
+	color: white;
+	}
+header .header-text {
+	position: relative;
+	text-align: center;
+	padding: 200px 100px 200px 100px;
+	width: 100%;
+}
+header .header-content .header-text h1 {
+	font-weight: 800;
+	text-transform: uppercase;
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 80px;
+}
+
+header .header-content .header-text p {
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 24px;
+  margin-bottom: 50px;
+  color: white;
+  //background: rgba(255, 255, 255, 0.6);
+}
+@media (min-width: 768px) {
+  header {
+    min-height: 100%;
+  }
+ }
+
+/*ABOUT*/
+#about {
+	padding: 100px;
+}
+
+/*SERVICES*/
+#services {
+	padding: 60px;
+}
+
+/*MAILING LIST*/
+#mailingList {
+	position: relative;
+	width: 100%;
+	min-height: 250px;
+	background-size: cover;
+	background-position: center;
+	background-image: url('../resources/cover3.jpg');
+	text-align: center;
+	color: white;
+	padding: 100px;
+}
+
+/*INFO*/
+#info {
+	padding: 60px;
+}
+/*CONTACTS*/
+#contacts {
+	padding: 80px;
+}
+
+.social-media {
+	margin-top: 15px;
+}
