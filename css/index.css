@@ -201,3 +201,17 @@ header .header-content .header-text p {
 .social-media {
 	margin-top: 15px;
 }
+
+
+/*FOOTER*/
+footer {
+	background-color: white;
+	padding: 10px 0;
+	font-size: 11px;
+}
+
+footer a,
+footer .glyphicon
+{
+	color: #A7DAEF;
+}
