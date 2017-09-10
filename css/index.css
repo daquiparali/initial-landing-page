@@ -1,6 +1,7 @@
 /*BACKGROUND*/
 .lightBG {
-	background-color: #A7DAEF;
+	background-color: #0097c8;
+	color: white;
 }
 .darkBG {
 	background-color: #293241;
@@ -19,16 +20,55 @@ hr.dark {
 }
 
 
+/*TEXT*/
+h1 {
+	line-height: 1.2;
+	font-size: 60px;
+	font-weight: 800;
+}
 h2 {
   font-size: 40px;
+  font-weight: 600;
   line-height: 1.5;
-  margin-bottom: -10px;
+}
+h3 {
+	font-size: 32px;
+	line-height: 1.5;
+	font-weight: 400;
+}
+h4 {
+	font-size: 20px;
+	line-height: 1.5;
+	font-weight: 400;
+}
+h5 {
+	font-size: 18px;
+	line-height: 1.5;
+	font-weight: 400;
+}
+p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+@media (max-width: 500px) {
+	h1 {font-size: 48px;}
+	h2 {font-size: 30px;}
+	h3 {font-size: 24px;}
+	h4 {font-size: 18px;}
+	h5 {font-size: 16px;}
+	p {font-size: 14px;}
+}
+@media (min-width: 900px) {
+	h1 {font-size: 80px;}
+	h2 {font-size: 48px;}
+	h3 {font-size: 36px;}
+	h4 {font-size: 24px;}
+	h5 {font-size: 20px;}
+	p {font-size: 16px;}
 }
 
-p {
-  font-size: 24px;
-  line-height: 1.5;
-  margin-bottom: 25px;
+a {
+	color: #0097c8;
 }
 
 html,
@@ -43,9 +83,10 @@ body {
 .navbar-default {
   background-color: white;
   border-color: rgba(41, 50, 65, 0.1);
+  text-transform: uppercase;
 }
 .navbar-default .navbar-header .navbar-toggle{ /*menu icon*/
-	background-color: #A7DAEF;
+	background-color: #0097c8;
 }
 .navbar-default .navbar-header .navbar-toggle:hover,
 .navbar-default .navbar-header .navbar-toggle:focus { /*menu icon on hover/focus*/
@@ -67,7 +108,7 @@ body {
 .navbar-default .nav > li > a:focus {
   font-weight: 600;
   font-size: 16px;
-  color: #A7DAEF;
+  color: #0097c8;
 }
 .navbar-default .nav > li > a:hover,
 .navbar-default .nav > li > a:focus:hover {
@@ -79,7 +120,7 @@ body {
 .navbar-default .nav > .active > a,
 .navbar-default .nav > .active > a:hover,
 .navbar-default .nav > .active > a:focus {
-	background-color:#A7DAEF;
+	background-color:#0097c8;
 	color: white;
 }
 
@@ -103,7 +144,7 @@ body {
 
 	.navbar.scrolled .nav > li > a,
 	.navbar.scrolled .nav > li > a:focus {
-		color: #A7DAEF;
+		color: #0097c8;
 	}
 
 	.navbar-default .nav > li > a,
@@ -121,7 +162,7 @@ body {
 	.navbar.scrolled .nav > .active > a,
 	.navbar.scrolled .nav > .active > a:hover,
 	.navbar.scrolled .nav > .active > a:focus {
-	    background-color:#A7DAEF;
+	    background-color:#0097c8;
 	    color: white;
 	}
 
@@ -141,39 +182,53 @@ header {
 header .header-text {
 	position: relative;
 	text-align: center;
-	padding: 200px 100px 200px 100px;
+	padding: 200px 50px 200px 50px;
 	width: 100%;
 }
 header .header-content .header-text h1 {
-	font-weight: 800;
+	//font-weight: 800;
 	text-transform: uppercase;
 	margin-top: 0;
-	margin-bottom: 0;
-	font-size: 80px;
+	margin-bottom: 50px;
+	//font-size: 80px;
 }
 
 header .header-content .header-text p {
-  font-weight: 500;
   color: rgba(255, 255, 255, 0.8);
-  font-size: 24px;
   margin-bottom: 50px;
   color: white;
   //background: rgba(255, 255, 255, 0.6);
+}
+@media (max-width: 400px) {
+  header .header-text {
+	padding: 180px 10px 180px 10px;
+  }
 }
 @media (min-width: 768px) {
   header {
     min-height: 100%;
   }
- }
+  header .header-text {
+	padding: 200px 100px 200px 100px;
+  }
+}
 
 /*ABOUT*/
 #about {
-	padding: 100px;
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+#about .text-center {
+	padding-top: 25px;
 }
 
 /*SERVICES*/
 #services {
-	padding: 60px;
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+#services .section-heading {
+	padding-bottom: 25px;
 }
 
 /*MAILING LIST*/
@@ -183,21 +238,24 @@ header .header-content .header-text p {
 	min-height: 250px;
 	background-size: cover;
 	background-position: center;
-	background-image: url('../resources/cover3.jpg');
+	background-image: url('../resources/cover2.jpg');
 	text-align: center;
 	color: white;
-	padding: 100px;
+	padding-top: 100px;
+	padding-bottom: 100px;
 }
 
 /*INFO*/
 #info {
-	padding: 60px;
-}
-/*CONTACTS*/
-#contacts {
-	padding: 80px;
+	padding-top: 60px;
+	padding-bottom: 60px;
 }
 
+/*CONTACTS*/
+#contacts {
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
 .social-media {
 	margin-top: 15px;
 }
@@ -213,5 +271,5 @@ footer {
 footer a,
 footer .glyphicon
 {
-	color: #A7DAEF;
+	color: #0097c8;
 }
