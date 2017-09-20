@@ -22,16 +22,19 @@ hr.dark {
 
 /*TEXT*/
 h1 {
+	font-family: 'Shadows Into Light Two', cursive;
 	line-height: 1.2;
 	font-size: 60px;
 	font-weight: 800;
 }
 h2 {
+  	font-family: 'Shadows Into Light Two', cursive;
   font-size: 40px;
   font-weight: 600;
   line-height: 1.5;
 }
 h3 {
+	font-family: 'Shadows Into Light Two', cursive;
 	font-size: 32px;
 	line-height: 1.5;
 	font-weight: 400;
@@ -70,6 +73,9 @@ p {
 a {
 	color: #0097c8;
 }
+a:hover {
+	color: #20b9d6;
+}
 
 html,
 body {
@@ -79,11 +85,29 @@ body {
   letter-spacing: 1px;
 }
 
+/*BUTTON*/
+.btn-customize {
+    background: #0097c8;
+    color: #ffffff;
+}
+ 
+.btn-customize:hover, .btn-customize:focus, .btn-customize:active, .btn-customize.active, .open > .dropdown-toggle.btn-customize {
+    background: #20b9d6;
+    color: #ffffff;
+}
+ 
+.btn-customize:active, .btn-customize.active {
+    background: #20b9d6;
+    color: #ffffff;
+    box-shadow: none;
+}
+
 /*NAVBAR*/
 .navbar-default {
-  background-color: white;
-  border-color: rgba(41, 50, 65, 0.1);
-  text-transform: uppercase;
+	font-family: 'Shadows Into Light Two', cursive;
+	background-color: white;
+	border-color: rgba(41, 50, 65, 0.1);
+	text-transform: uppercase;
 }
 .navbar-default .navbar-header .navbar-toggle{ /*menu icon*/
 	background-color: #0097c8;
@@ -97,11 +121,11 @@ body {
 }
 .navbar-default .navbar-header .navbar-toggle:hover .icon-bar,
 .navbar-default .navbar-header .navbar-toggle:focus .icon-bar{ /*menu bars*/
-	background-color: #293241;
+	background-color: #20b9d6;
 }
 .navbar-default .navbar-header .navbar-brand:hover,
 .navbar-default .navbar-header .navbar-brand:focus {
-//  background-color: #293241;
+//  background-color: #20b9d6;
 //  color: white;
 }
 .navbar-default .nav > li > a,
@@ -112,9 +136,7 @@ body {
 }
 .navbar-default .nav > li > a:hover,
 .navbar-default .nav > li > a:focus:hover {
-//  background-color: #7a4407;
-//  color: white;
-	color: #293241;
+	color: #20b9d6;
 }
 
 .navbar-default .nav > .active > a,
@@ -127,7 +149,6 @@ body {
 @media (min-width: 768px) {
 	.navbar {
 		background: transparent;
-		//color: white;
 	    -webkit-transition: all 0.6s ease-out;
 	    -moz-transition: all 0.6s ease-out;
 	    -o-transition: all 0.6s ease-out;
@@ -157,7 +178,7 @@ body {
 	}
 	.navbar-default .nav > li > a:hover,
 	.navbar-default .nav > li > a:focus:hover {
-		color: #293241;
+		color: #20b9d6;
 	}
 	.navbar.scrolled .nav > .active > a,
 	.navbar.scrolled .nav > .active > a:hover,
@@ -186,18 +207,15 @@ header .header-text {
 	width: 100%;
 }
 header .header-content .header-text h1 {
-	//font-weight: 800;
 	text-transform: uppercase;
 	margin-top: 0;
-	margin-bottom: 50px;
-	//font-size: 80px;
+	margin-bottom: 100px;
 }
 
 header .header-content .header-text p {
   color: rgba(255, 255, 255, 0.8);
   margin-bottom: 50px;
   color: white;
-  //background: rgba(255, 255, 255, 0.6);
 }
 @media (max-width: 400px) {
   header .header-text {
@@ -222,13 +240,28 @@ header .header-content .header-text p {
 	padding-top: 25px;
 }
 
+/*OFFERS*/
+#offers {
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+#offers i {
+	padding-top: 25px;
+}
+@media (min-width: 768px) {
+	#offers i {
+		padding-top: 50px;
+	}
+}
+
+
 /*SERVICES*/
 #services {
 	padding-top: 60px;
 	padding-bottom: 60px;
 }
 #services .section-heading {
-	padding-bottom: 25px;
+	padding-bottom: 50px;
 }
 
 /*MAILING LIST*/
@@ -240,15 +273,27 @@ header .header-content .header-text p {
 	background-position: center;
 	background-image: url('../resources/cover2.jpg');
 	text-align: center;
-	color: white;
+	color: #293241;
 	padding-top: 100px;
 	padding-bottom: 100px;
 }
-
+@media (min-width: 768px) and (max-width: 992px) {
+	#mailingList button {
+		margin-top: 10px;
+	}
+}
+@media (min-width: 992px) {
+	#mailingList form {
+		margin-top: 25px;
+	}
+}
 /*INFO*/
 #info {
 	padding-top: 60px;
 	padding-bottom: 60px;
+}
+#info a{
+	margin-top: 20px;
 }
 
 /*CONTACTS*/
@@ -256,8 +301,11 @@ header .header-content .header-text p {
 	padding-top: 80px;
 	padding-bottom: 80px;
 }
-.social-media {
-	margin-top: 15px;
+#contacts .col-sm-4 {
+	margin-top: 25px;
+}
+.social-media li{
+	margin-top: 5px;
 }
 
 
